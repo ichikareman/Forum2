@@ -1,0 +1,15 @@
+﻿@model IEnumerable<Forum2.ViewModel.ThreadViewModels>
+@{
+    ViewBag.Title = "Index";
+}
+
+@foreach (var item in Model)
+{
+    <div id="thread-container" style="width:300px;height:100px;background-color:black;margin:5px;">
+        <div style="float:left;background-color:rgb(100,100,100);margin:10px;color:White;padding:3px;">@item.Subject</div><div style="float:right;background-color:rgb(100,100,100);margin:10px;color:White;padding:3px;">@item.DatePosted</div>
+        <div style="clear:both"></div>
+        <div style="background-color:rgb(100,100,100);margin:10px;color:White;padding:3px;">@item.Message</div>
+        
+
+    </div>
+}
